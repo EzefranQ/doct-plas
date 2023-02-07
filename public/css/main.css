@@ -269,7 +269,6 @@ img{
 }
 .clinicas{
     text-align: center;
-    
 }
 .clinicas .sec-text{
     width: 100%;
@@ -335,7 +334,7 @@ img{
 .b-display{
     display: none;
 }
-.clinica-img-movil{
+.grid-mobile{
     display: none;
 }
 
@@ -364,11 +363,22 @@ img{
     }
 }
 @media screen and (max-width: 880px) {
-    .grid-clinicas{
+    .grid-desktop{
+        display: none;
+    }
+    .clinica-img-movil img{
+        border: 2px solid #fff;
+    }
+    .grid-mobile{
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
+    /* .grid-clinicas{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    } */
     .grid-bottom{
         display: none;
     }
@@ -381,11 +391,6 @@ img{
         width: 100%;
         height: 350px;
     }
-
-    .clinica-img{
-        border: 2px solid #fff;
-        height: 70%;
-    }
     .sec-box{
         gap: 5px;
     }
@@ -397,15 +402,6 @@ img{
     .clinicas-left{
         flex-direction: column;
         gap: 30px;
-    }
-    .clinica-img{
-        display: none;
-    }
-    .clinica-img-movil{
-        display: flex;
-    }
-    .clinica-img-movil img{
-        border: 2px solid #fff;
     }
 
 }
